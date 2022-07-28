@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital@1&display=swap');
+html {
+    box-sizing: border-box;
+
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M0%2c630.028C114.334%2c610.911%2c196.572%2c520.044%2c291.006%2c452.814C380.494%2c389.105%2c491.203%2c345.056%2c539.127%2c246.211C587.406%2c146.636%2c574.015%2c28.846%2c548.808%2c-78.907C525.064%2c-180.404%2c465.616%2c-265.632%2c400.371%2c-346.924C332.822%2c-431.086%2c260.78%2c-510.733%2c163.962%2c-558.402C54.326%2c-612.382%2c-75.433%2c-686.426%2c-186.745%2c-635.994C-300.031%2c-584.668%2c-290.99%2c-416.436%2c-366.874%2c-317.898C-436.257%2c-227.802%2c-578.706%2c-197.157%2c-609.082%2c-87.573C-639.728%2c22.982%2c-561.871%2c130.731%2c-520.942%2c237.906C-477.095%2c352.72%2c-459.268%2c487.932%2c-361.075%2c561.844C-261.191%2c637.028%2c-123.306%2c650.645%2c0%2c630.028' fill='%230b2239'%3e%3c/path%3e%3cpath d='M1440 1216.3319999999999C1561.511 1218.643 1621.675 1066.191 1716.282 989.903 1798.476 923.625 1902.742 886.2570000000001 1959.638 797.311 2021.271 700.96 2045.037 587.068 2047.113 472.71 2049.468 342.97900000000004 2072.346 181.38799999999998 1972.318 98.74400000000003 1869.144 13.500999999999976 1710.4180000000001 112.185 1579.156 86.07900000000001 1465.339 63.442999999999984 1377.6779999999999-61.00199999999995 1263.149-42.298 1147.883-23.472999999999956 1077.1770000000001 91.08699999999999 1001.8720000000001 180.36 927.486 268.543 848.633 358.462 829.172 472.176 809.47 587.296 829.064 712.325 894.244 809.239 955.8430000000001 900.829 1081.914 913.5260000000001 1170.3890000000001 979.5219999999999 1268.25 1052.519 1317.935 1214.011 1440 1216.3319999999999' fill='%23113255'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+   color: white;
+   font-family: Montserrat, sans-serif;
+   font-weight: 700;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.quote-container {
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(8, 8, 59, 0.068);
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.075);
+}
+
+.quote-text{
+    font-size: 2.75rem;
+}
+.long-quote{
+    font-size: 2rem;
+}
+.fa-quote-left{
+    font-size: 4rem;
+}
+.quote-author{
+    margin-top: 15px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.button-container{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+button{
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background:  rgba(8, 8, 59, 0.158);
+    outline: none;
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0 0.3rem black;
+    
+}
+button:hover{
+    filter: brightness(110%);
+}
+button:active{
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem black;
+}
+.twitter-button:hover{
+    color: blue;
+}
+.fa-twitter {
+    font-size: 1.5rem;
+}
+/* load */
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+.thg{
+    display: flex;
+    justify-content: center;
+    height: 15rem;
+}
+
+@media screen and (max-width:100px) {
+    .quote-container {
+        margin: auto 10px;
+    }
+    .quote-text{
+        font-size: 2.5rem;
+    }
+}
